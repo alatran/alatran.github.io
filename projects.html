@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><strong>home</strong></a></li>
+            <li><a href="about.html"><strong>about</strong></a></li>
+            <li><a href="education_and_experiences.html"><strong>education and experiences</strong></a></li>
+            <li><a href="projects.html"><strong>projects</strong></a></li>
+            <li><a href="#contact"><strong>contact</strong></a></li>
+        </ul>
+        </nav>
+    </div>
+
+    <div class="cards-container">
+    <div class="card" data-title="cs50 final project: tracare" data-image="tracare.png" data-description="for my final project for my introduction to cs course, cs50, i created
+    a web application called tracare, a wellness tracker and digital journal. having done bullet journaling in the past, i thought this would be a useful application 
+    that is slightly more convenient than designing and logging into a physical journal. i created this on cs50's codespace using html/css and javascript for the front-end and python and flask for the back-end. i also used sql to store user data. 
+    to learn more, view my video on tracare on" data-link="https://www.youtube.com/watch?v=ixztONdeihg">
+      <img src="tracare.png" alt="cs50 final project: tracare">
+      <h3>cs50 final project: tracare</h3>
+      <p>well-being and habit tracker, journaling tool</p>
+      <button onclick="showOverlay(this)">learn more</button>
+    </div>
+
+    <div class="card" data-title="wics portal" data-image="wics.png" data-description="before the spring semester, i was selected to be an assistant portal director for wics. this was my first time working on a project of this scale. 
+    during the semester, i spent the first few weeks working on the front-end. most of this front-end work was redoing the color scheme of the portal to meet wcag. i ended up making the main colors to be shades of purple instead of shades of pink as it maintained our feminine aesthetic while being much more readable against white text. 
+    after getting more comfortable with the front-end, i began working on the back-end, making edits such as adding resources, creating new tabs, editing search capabilities, and revamping profile editing.">
+      <img src="wics.png" alt="Card 2">
+      <h3>harvard women in computer science (wics) portal</h3>
+      <p>centralized location for wics members to get and share info.</p>
+      <button onclick="showOverlay(this)">learn more</button>
+    </div>
+
+    <div class="card" data-title="rfk human rights ux" data-image="https://via.placeholder.com/500x250/00cc99/fff" data-description="for the spring '25 semester, my team worked with rfk human rights to revise their civic space case tracker tool on their website.">
+      <img src="https://via.placeholder.com/300x150/00cc99/fff" alt="Card 3">
+      <h3>rfk human rights ux designs</h3>
+      <p>Short description of Card Three.</p>
+      <button onclick="showOverlay(this)">learn more</button>
+    </div>
+  </div>
+
+  <!-- Overlay modal -->
+  <div class="overlay" id="overlay">
+    <div class="expanded-card">
+      <button class="close-btn" onclick="hideOverlay()">×</button>
+      <img id="modalImage" src="" alt="Expanded Image" style="width: 100%; border-radius: 8px;">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
