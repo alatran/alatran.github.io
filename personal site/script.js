@@ -1,8 +1,8 @@
-
+// home page greetings in different languages
         const greetings = [
-            "hello, world!",       // English
-            "¡hola mundo!",        // Spanish
-            "你好世界!",           // Chinese (Mandarin)
+            "hello, world!",     
+            "¡hola mundo!",        
+            "你好世界!",           
             "xin chào thế giới!"    
         ];
 
@@ -14,6 +14,7 @@
             helloElement.textContent = greetings[index];
         }, 1500); 
 
+// cards after clicking 'learn more'
 function showOverlay(button) {
       const card = button.closest('.card');
       const title = card.getAttribute('data-title');
